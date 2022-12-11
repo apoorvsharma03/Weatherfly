@@ -1,0 +1,129 @@
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(images/default_bkg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: whitesmoke;
+    font-family: sans-serif;
+}
+
+.rectangle{
+    width: 45vh;
+    height: 48vh;
+    border-radius: 20px;    
+    background-color: black;
+    opacity: 70%;
+    padding: 20px;
+}
+
+.search{
+    display: flex;
+    justify-content: center;
+    margin-top: 0.5vh;
+    margin-bottom: 2vh;
+    height: fit-content;
+    width: auto;
+}
+
+.magglass{
+    height: 4vh;
+    padding: 1vh;
+    padding-top: 1vh;
+    background-color: #fff;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.searchbox{
+    height: 4vh;
+    width: 35vh;
+    padding: 1vh;
+    font-size: 3vh;
+    border: none;
+    border-radius: 10px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    background-color: #fff;
+}
+
+.searchbox:focus{
+    outline: none;
+}
+
+.citydiv{
+    height: fit-content;
+    z-index: 1;   
+    margin: 0 auto;
+    font-size: 3vh;
+    color: whitesmoke;
+    font-family: sans-serif;
+}
+
+.cityname{
+    display: flex;
+    justify-content: center;
+}
+
+h2{
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    font-size: 3vh;
+    margin: 1vh 0;
+    text-align: center;
+}
+
+hr{
+    margin: 2vh 0;
+}
+
+.temp{
+    color: whitesmoke;
+    font-size: 6vh;
+    font-family: 'Oswald', sans-serif;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+}
+
+.maindiv{
+    display: grid;
+    grid-template-areas: "temp icon"
+                         "feelslike weather";
+    justify-content: space-around;
+    align-items: center;
+    margin: auto auto;
+    height: 31vh;
+    margin-top: -2vh;
+}
+
+.weathericon{
+    height: 14vh;
+    grid-area: icon;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+#weather{
+    grid-area: weather;
+}
+
+#feelslike{
+    grid-area: feelslike;
+}
+
+#humidity{
+    grid-area: humidity;
+}
+
+.stats{
+    display: flex;
+    justify-content: center;
+}

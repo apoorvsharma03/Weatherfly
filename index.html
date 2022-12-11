@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+        <title>Weatherfly</title>
+    </head>
+    <body id="body">
+        <div class="rectangle">
+            <span class="search">
+                <img src="images/clipart2795130.png" alt="search" class="magglass">
+                <form  id="form"><input type="text" placeholder="City..." class="searchbox" id="searchbox"></form>
+            </span>
+            <hr>
+            <div class="citydiv">
+                <div class="cityname">
+                    <h2 class="city" id="city">City,</h2>
+                    <h2>&nbsp</h2>
+                    <h2 class="country" id="country">Country</h2>
+                </div>
+            </div>
+            <hr>
+            <div class=" maindiv">
+                <span class="temp">
+                    <h2 id="temp">T°C</h2>
+                </span>
+                <span id="weathericon">
+                    <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather_icon" class="weathericon">
+                </span>
+                <div class="stats">
+                    <h1>Feels Like&nbsp<span id="feelslike" >T°C</span></h1>
+                </div>
+                <div class="stats" id="weather_stat">
+                    <h1><span  id="weather">Weather</span></h1>
+                </div>
+                <div class="stats">
+                    <h1>Humidity:&nbsp<span id="humidity" >XX%</span></h1>
+                </div>
+                <div class="stats">
+                    <h1>Wind:&nbsp<span id="windspeed" >X.XX</span>m/s</h1>
+                </div>
+            </div>
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>
